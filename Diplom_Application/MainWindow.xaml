@@ -1,0 +1,18 @@
+﻿<Window x:Class="Diplom_Application.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Diplom_Application"
+        mc:Ignorable="d"
+        Title="Главная" Height="98.362" Width="473.688" Loaded="Window_Loaded">
+    <Grid Margin="0,0,2,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button Grid.ColumnSpan="2" Content="Аудит" HorizontalAlignment="Left" Margin="244,20,0,0" VerticalAlignment="Top" Width="200" Height="28" Click="Button_Click_1"/>
+        <Button Grid.ColumnSpan="2" Content="Прозрачное шифрование" HorizontalAlignment="Left" Margin="18,20,0,0" VerticalAlignment="Top" Width="200" Click="Button_Click_2" Height="28"/>
+
+    </Grid>
+</Window>

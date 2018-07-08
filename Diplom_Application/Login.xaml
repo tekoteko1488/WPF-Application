@@ -1,0 +1,19 @@
+﻿<Window x:Class="Diplom_Application.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Diplom_Application"
+        mc:Ignorable="d"
+        Title="Авторизация" Height="261.999" Width="283.333" Loaded="Window_Loaded">
+    <Grid>
+        <Label Content="Логин" HorizontalAlignment="Left" Margin="25,92,0,0" VerticalAlignment="Top"/>
+        <Label Content="Пароль" HorizontalAlignment="Left" Margin="25,137,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBox_Login" HorizontalAlignment="Left" Height="20" Margin="87,98,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="152" />
+        <Button x:Name="button_Enter" Content="Войти" HorizontalAlignment="Left" Margin="87,184,0,0" VerticalAlignment="Top" Width="152" Click="button_Enter_Click"/>
+        <ComboBox x:Name="comboBox_Servers" HorizontalAlignment="Left" Margin="18,41,0,0" VerticalAlignment="Top" Width="221" Height="25" AutomationProperties.Name="comboBox_Servers"/>
+        <Label Content="Выберите сервер" HorizontalAlignment="Left" Margin="14,10,0,0" VerticalAlignment="Top" Height="26" Width="113"/>
+        <PasswordBox x:Name="passwordBox_Password" HorizontalAlignment="Left" Margin="87,143,0,0" VerticalAlignment="Top" Width="152" Height="20"/>
+
+    </Grid>
+</Window>

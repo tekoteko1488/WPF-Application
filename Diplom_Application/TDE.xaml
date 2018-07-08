@@ -1,0 +1,40 @@
+﻿<Window x:Class="Diplom_Application.TDE"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Diplom_Application"
+        mc:Ignorable="d"
+        Title="TDE" Height="701.667" Width="337" Loaded="Window_Loaded">
+    <Grid>
+        <Label Content="Сервер: " HorizontalAlignment="Left" Margin="17,10,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock_NameOfTheServer" HorizontalAlignment="Left" Margin="96,15,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="141"/>
+        <Label Content="SMK" HorizontalAlignment="Left" Margin="17,72,0,0" VerticalAlignment="Top"/>
+        <Label Content="DMK" HorizontalAlignment="Left" Margin="17,110,0,0" VerticalAlignment="Top"/>
+        <Label Content="Название ключа" HorizontalAlignment="Left" Margin="71,48,0,0" VerticalAlignment="Top"/>
+        <Label Content="ID ключа" HorizontalAlignment="Left" Margin="234,48,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock_SMK" HorizontalAlignment="Left" Margin="77,77,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock_DMK" HorizontalAlignment="Left" Margin="77,114,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock_SMKID" HorizontalAlignment="Left" Margin="238,79,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock_DMKID" HorizontalAlignment="Left" Margin="238,115,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <Label Content="Введите имя сертификата" HorizontalAlignment="Left" Margin="37,176,0,0" VerticalAlignment="Top"/>
+        <Label Content="Введите подпись сертификата" HorizontalAlignment="Left" Margin="37,239,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBox_NameCerf" HorizontalAlignment="Left" Height="23" Margin="44,207,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="241"/>
+        <TextBox x:Name="textBox_SubjectCerf" HorizontalAlignment="Left" Height="23" Margin="44,270,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="241"/>
+        <Button Content="Создать сертификат" HorizontalAlignment="Left" Margin="44,310,0,0" VerticalAlignment="Top" Width="241" Click="Button_Click"/>
+        <Label Content="Выберите БД, которую нужно зашифровать" HorizontalAlignment="Left" Margin="37,380,0,0" VerticalAlignment="Top"/>
+        <Label Content="Введите имя сертификата" HorizontalAlignment="Left" Margin="41,440,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="comboBox_Database" HorizontalAlignment="Left" Margin="44,411,0,0" VerticalAlignment="Top" Width="241"/>
+        <CheckBox x:Name="checkBox_AES128" Content="AES_128" HorizontalAlignment="Left" Margin="44,516,0,0" VerticalAlignment="Top" Checked="checkBox_AES128_Checked_1"/>
+        <CheckBox x:Name="checkBox_AES192" Content="AES_192" HorizontalAlignment="Left" Margin="132,516,0,0" VerticalAlignment="Top" Checked="checkBox_AES192_Checked"/>
+        <CheckBox x:Name="checkBox_AES256" Content="AES_256" HorizontalAlignment="Left" Margin="225,516,0,0" VerticalAlignment="Top" Checked="checkBox_AES256_Checked"/>
+        <Button Content="Создать ключ шифрования" HorizontalAlignment="Left" Margin="44,546,0,0" VerticalAlignment="Top" Width="241" Click="Button_Click_1"/>
+        <Button x:Name="button_OnTDE" Content="Включить TDE" HorizontalAlignment="Left" Margin="44,591,0,0" VerticalAlignment="Top" Width="241" Click="button_OnTDE_Click"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="168" Margin="32,176,0,0" VerticalAlignment="Top" Width="270"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="196" Margin="32,380,0,0" VerticalAlignment="Top" Width="270"/>
+        <Label Content="Создание ключа шифрования данных" HorizontalAlignment="Left" Margin="37,349,0,0" VerticalAlignment="Top"/>
+        <Label Content="Создание сертификата" HorizontalAlignment="Left" Margin="37,145,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="comboBox_NameCerf" HorizontalAlignment="Left" Margin="44,471,0,0" VerticalAlignment="Top" Width="241"/>
+        <Button x:Name="button_OffTDE" Content="Выключить TDE" HorizontalAlignment="Left" Height="20" Margin="44,629,0,0" VerticalAlignment="Top" Width="241" Click="button_OffTDE_Click"/>
+    </Grid>
+</Window>
